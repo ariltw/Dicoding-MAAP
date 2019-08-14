@@ -1,3 +1,79 @@
 <resources>
-    <string name="app_name">Composer</string>
+    <string name="app_name">Composer Decoded</string>
+
+    <string name="dummy_short">Lorem Ipsum</string>
+
+    <string name="app_about">About</string>
+
+    <string name="data_acc_name">Ariel Theodore Wairisal</string>
+    <string name="data_acc_id">ariltw</string>
+
+    <string-array name="data_list_name">
+        <item>Johann Sebastian Bach</item>
+        <item>Ludwig van Beethoven</item>
+        <item>Wolfgang Amadeus Mozart</item>
+        <item>Johannes Brahms</item>
+        <item>Frédéric Chopin</item>
+        <item>Pyotr Ilyich Tchaikovsky</item>
+        <item>Georg Friedrich Händel</item>
+        <item>Claude Debussy</item>
+        <item>Joseph Haydn</item>
+        <item>Franz Liszt</item>
+        <item>Igor Stravinsky</item>
+        <item>Gustav Mahler</item>
+        <item>Franz Schubert</item>
+        <item>Sergei Rachmaninoff</item>
+    </string-array>
+    
+    <array name="data_list_img">
+        <item>@drawable/a</item>
+        <item>@drawable/b</item>
+        <item>@drawable/c</item>
+        <item>@drawable/d</item>
+        <item>@drawable/e</item>
+        <item>@drawable/f</item>
+        <item>@drawable/g</item>
+        <item>@drawable/h</item>
+        <item>@drawable/i</item>
+        <item>@drawable/j</item>
+        <item>@drawable/k</item>
+        <item>@drawable/l</item>
+        <item>@drawable/m</item>
+        <item>@drawable/n</item>
+    </array>
+
+    <string-array name="data_list_year">
+        <item>1685–1750</item>
+        <item>1770–1827</item>
+        <item>1756–1791</item>
+        <item>1833–1897</item>
+        <item>1810–1849</item>
+        <item>1840–1893</item>
+        <item>1685–1759</item>
+        <item>1862–1918</item>
+        <item>1732–1809</item>
+        <item>1811–1886</item>
+        <item>1882–1971</item>
+        <item>1860–1911</item>
+        <item>1797–1828</item>
+        <item>1873–1943</item>
+    </string-array>
+
+    <string-array name="data_list_desc">
+        <item>Johann Sebastian Bach adalah seorang komponis Jerman. Ia menggubah musik untuk alat musik organ, harpsichord, clavichord, dan juga untuk orkestra. Ia telah menggubah lebih dari 1000 lagu. Set lagu oleh Bach Brandenburg Concertos, lagu gereja Mass in B minor, adalah yang paling terkenal.</item>
+        <item>Ludwig van Beethoven adalah seorang komponis musik klasik dari Jerman. Karyanya yang terkenal adalah simfoni kelima dan kesembilan, dan juga lagu piano Für Elise. Ia dipandang sebagai salah satu komponis yang terbesar dan merupakan tokoh penting dalam masa peralihan antara Zaman Klasik dan Zaman Romantik.</item>
+        <item>DeskripsiWolfgang Amadeus Mozart yang bernama asli Johannes Chrysostomus Wolfgangus Gottlieb Mozart adalah seorang komponis. Mozart dianggap sebagai salah satu dari komponis musik klasik Eropa yang terpenting dan paling terkenal dalam sejarah.</item>
+        <item>DeskripsiJohannes Brahms adalah seorang komponis dan pianis dari Jerman, salah satu musisi utama pada zaman Romantik. Brahms lahir di Hamburg, Jerman, tetapi kemudian banyak berkarya di Wina, Austria. Pada masa hidupnya, Brahms sangat populer dan berpengaruh dalam dunia musik.</item>
+        <item>DeskripsiFrédéric François Chopin, nama lahir Fryderyk Franciszek Chopin, adalah seorang komposer dan pemain piano virtuoso dari Polandia. Ia dikenal sebagai salah satu musisi Romantik terbesar.</item>
+        <item>DeskripsiPyotr Ilyich Tchaikovsky; Kamsko-Votkinsk, 7 Mei/25 April 1840–St. Petersburg, 6 November/25 Oktober 1893 adalah seorang komposer Rusia pada zaman musik Romantik. Ia banyak menulis musik balet seperti Danau Angsa dan Pemecah Kacang.</item>
+        <item>DeskripsiGeorg Friedrich Händel, adalah seorang komponis musik Barok Jerman yang menghabiskan sebagian besar masa hidupnya di Britania Raya. Dia dianggap sebagai pencipta terkemuka dalam musik concerti grossi, opera dan oratorio. Contoh karyanya yang terkenal adalah Water Music, Fireworks Music dan oratorio Messiah.</item>
+        <item>DeskripsiAchille-Claude Debussy adalah komponis berkebangsaan Prancis. Musiknya dianggap sebagai peralihan dari zaman musik romantik ke musik modern di awal abad ke-20.</item>
+        <item>DeskripsiFranz Joseph Haydn adalah salah seorang komponis yang paling berpengaruh dari Zaman Klasik yang dijuluki "Bapak Simfoni" atau "Bapak Kuartet Gesek". Haydn menghabiskan sebagian besar kariernya sebagai musikus untuk keluarga Eszterházy di kediaman mereka yang sulit dijangkau di Austria.</item>
+        <item>DeskripsiFranz Liszt adalah seorang komposer, pianis, pengaba, dan guru musik asal Hungaria pada abad ke-19. Semasa hidupnya, Liszt menulis sekitar 700 komposisi musik, termasuk di dalamnya lagu gerejawi dan puisi simfonis.</item>
+        <item>DeskripsiIgor Fyodorovich Stravinsky merupakan seorang komponis berkebangsaan Rusia. Dia merupakan komponis yang menjadi terkenal di majalah TIME. Dia merupakan komponis yang punya hobi mengubah-ubah ketukan manakala mengeksploitasi elemen ritme.</item>
+        <item>DeskripsiGustav Mahler merupakan seorang komposer berkebangsaan Austria. Dia menjadi terkenal saat memimpin sebagai konduktor di tempat gedung opera. Dia berkarier sebagai konduktor sejak tahun 1881. Pada tahun 1901 dia pindah ke villa baru di Danau Majernigg, Carinthia. Dia meninggal dunia pada tahun 1911.</item>
+        <item>DeskripsiFranz Peter Schubert adalah komposer dan pianis berkebangsaan Austria. Ia terkenal karena karyanya dalam lagu Moment Musical.</item>
+        <item>DeskripsiSergei Vasilievich Rachmaninoff, Sergej Vasil’evič Rahmaninov, lahir 1 April 1873 – meninggal 28 Maret 1943 pada umur 69 tahun atau lahir 20 Maret 1873 adalah seorang komponis, pianis dan dirigen Rusia. Lahir di keluarga dengan latar belakang musik, Rachmaninoff belajar memainkan piano sejak umur 4 tahun.</item>
+    </string-array>
+
 </resources>
