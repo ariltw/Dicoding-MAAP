@@ -5,7 +5,7 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-public abstract class BaseViewHolder extends RecyclerView.ViewHolder {
+abstract class BaseViewHolder extends RecyclerView.ViewHolder {
 
     BaseViewHolder(@NonNull View itemView) {
         super(itemView);
@@ -13,7 +13,7 @@ public abstract class BaseViewHolder extends RecyclerView.ViewHolder {
 
     protected abstract void clear();
 
-    public void onBind(int position) {
+    void onBind(int position) {
         clear();
     }
 

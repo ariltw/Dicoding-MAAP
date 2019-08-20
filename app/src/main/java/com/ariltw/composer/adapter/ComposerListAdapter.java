@@ -20,7 +20,6 @@ import java.util.List;
 
 public class ComposerListAdapter extends RecyclerView.Adapter<ComposerListAdapter.ViewHolder> {
 
-    private static final String TAG = ComposerListAdapter.class.getSimpleName();
     private final List<Composer> composerList;
     private final Context context;
 
@@ -55,13 +54,14 @@ public class ComposerListAdapter extends RecyclerView.Adapter<ComposerListAdapte
 
     public class ViewHolder extends BaseViewHolder implements View.OnClickListener {
 
-        final TextView name;
+        final TextView name, desc;
         final ImageView img;
         final Context context;
 
         ViewHolder(View itemView, Context context) {
             super(itemView);
             name = itemView.findViewById(R.id.name);
+            desc = itemView.findViewById(R.id.desc);
             img = itemView.findViewById(R.id.image);
             this.context = context;
             itemView.setOnClickListener(this);
@@ -81,11 +81,12 @@ public class ComposerListAdapter extends RecyclerView.Adapter<ComposerListAdapte
             Glide.with(context).clear(img);
         }
 
-        public void onBind(int position) {
+        void onBind(int position) {
             super.onBind(position);
 
             final Composer composer = composerList.get(position);
             name.setText(composer.getName());
+            desc.setText(composer.getDescription());
             Glide.with(this.context)
                     .load(composer.getImage())
                     .placeholder(R.color.colorPrimary)

@@ -1,24 +1,49 @@
 package com.ariltw.composer;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.content.res.TypedArray;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 
 import com.ariltw.composer.adapter.ComposerListAdapter;
+import com.ariltw.composer.adapter.DeviderItemDecoration;
 import com.ariltw.composer.model.Composer;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
+
+// TODO : [DONE] move to account detail
+// TODO : crate best practice for recyclerview
 
 public class MainActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem menuItem) {
+        if(menuItem.getItemId() == R.id.menu_about) {
+            Intent intent = new Intent(this, AboutActivity.class);
+            startActivity(intent);
+        }
+        return true;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,10 +51,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         recyclerView = findViewById(R.id.recyclerview);
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setMotionEventSplittingEnabled(false);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        layoutManager.setOrientation(RecyclerView.VERTICAL);
+
+        recyclerView.setLayoutManager(layoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
+        // Drawable dividerDrawable = ContextCompat.getDrawable(this, R.drawable.divider_drawable);
+        recyclerView.addItemDecoration(new DeviderItemDecoration(16));
 
         ArrayList<Composer> data = composerList();
         loadData(data);
